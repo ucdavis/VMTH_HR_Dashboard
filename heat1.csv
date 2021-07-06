@@ -1,0 +1,26 @@
+Day,Type,Value
+Monday,Sick ,1
+Monday,Vacation,2
+Monday,Emergency,3
+Monday,Leave,4
+Monday,Other,5
+Tuesday,Sick ,6
+Tuesday,Vacation,7
+Tuesday,Emergency,8
+Tuesday,Leave,9
+Tuesday,Other,10
+Wednesday,Sick ,11
+Wednesday,Vacation,12
+Wednesday,Emergency,13
+Wednesday,Leave,14
+Wednesday,Other,15
+Thursday,Sick ,16
+Thursday,Vacation,17
+Thursday,Emergency,18
+Thursday,Leave,19
+Thursday,Other,20
+Friday,Sick ,21
+Friday,Vacation,22
+Friday,Emergency,23
+Friday,Leave,24
+Friday,Other,25
