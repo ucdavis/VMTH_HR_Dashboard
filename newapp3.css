@@ -210,7 +210,9 @@
 
 
 div.tooltip {
-  position: absolute;
+  position: relative;
+    top: -291px;
+    left: 342px;
   text-align: center;
   width: 60px;
   height: 28px;
@@ -923,4 +925,76 @@ padding-top: 80px;
 }
 
 
+a {
+  text-decoration: none;
+  color:inherit;
+}
 
+nav {
+  font-family: monospace;
+}
+
+ul {
+ 
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  width:250px;
+}
+
+li {
+  
+  display: block;
+  
+ 
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+
+
+li:hover {
+  background: none;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  display: none;
+  top:45px;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  z-index: 100;
+}
+
+ul li ul li {
+ height:25px;
+  width: 100%;
+}
+
+li a :hover {
+  background: #855cf81c;
+  cursor: pointer;
+}
+
+.links2{
+  padding-left:10px;
+  padding-top:5px;
+}
+
+.dropdown{
+  border-radius: 5px;
+  border:solid black 1px
+}
