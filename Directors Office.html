@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="newapp3.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="https://kit.fontawesome.com/e7718c6afc.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Directors Office</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="line-top"><div class="big-text2"></div></div>
+          <div class="top-nav-logo"><img src="imgs\dog.svg" alt="clock icon">UC Davis <div class="line-top2"></div></div>
+          <div class="info-text">
+            
+        <a href= "\home.html"> <div class="info-text3"><div class="active-nav"><div class="nav-icon"><img src="imgs\home.svg" alt="clock icon"></div> Home</div></div></a>
+        <a href= "\department.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\paw-print.svg" alt="clock icon"></div>Department</div></a>
+        <a href= "\metrics.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\metrics.svg" alt="clock icon"></div>Metrics</div></a>
+        <a href= "\FAQ.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\faq.svg" alt="clock icon"></div>FAQ</div></a>
+        <a href= "\contact.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\mail.svg" alt="clock icon"></div>Contact</div></a>
+        <a href= "\settings.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\settings.svg" alt="clock icon"></div>Settings</div></a>
+          
+          </div>
+
+          <div class="dog-logo"><img src="imgs\night-mode.svg" alt="clock icon">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+            </label>
+          </div>
+          </div>
+        </div>
+        <div class="column2">
+          <nav role="navigation">
+            <ul>
+              <li> <div class="big-text">Director's Office <br> <span>June 2021 Mon-Fri</span></div>
+                <ul class="dropdown">
+                    <a href="\Anesthesia.html"> <li class='links2'>Anesthesia</li></a>
+                    <a href="\Central Service.html"><li class='links2'>Central Service</li></a>
+                    <a href="\Client Services.html"><li class='links2'>Client Services</li></a>
+                    <a href="\Directors Office.html"> <li class='links2'>Director's Office</li></a>
+                    <a href="\Gourley.html"><li class='links2'>Gourley</li></a>
+                    <a href="\Imaging.html"><li class='links2'>Imaging</li></a>
+                    <a href="\LA Clinic.html"> <li class='links2'>LA Clinic</li></a>
+                    <a href="\Labs.html"><li class='links2'>Labs</li></a>
+                    <a href="\Medicine Community Practice.html"><li class='links2'>Medicine/Community Practice</li></a>
+                    <a href="\Oncology.html"> <li class='links2'>Oncology</li></a>
+                    <a href="\Pathology.html"><li class='links2'>Pathology</li></a>
+                    <a href="\Pharmacy.html"><li class='links2'>Pharmacy</li></a>
+                    <a href="\Receiving.html"> <li class='links2'>Receiving</li></a>
+                    <a href="\SA ICU.html"><li class='links2'>SA ICU</li></a>
+                    <a href="\SA Specialties.html"><li class='links2'>SA Specialities</li></a>
+                    <a href="\SA Surgery.html"><li class='links2'>SA Surgery</li></a>
+                    <a href="\SAPCS.html"><li class='links2'>SAPCS</li></a>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+            <div class="mid_container">
+                <div class="item">
+                  <div class="first-word">
+                    Total Absent
+                  </div>
+                  <div class="second-word">
+                    <div id = "total_absent_p"></div> <p>people</p>
+                  </div>
+                  <div class="card-icon"><img src="imgs\man.svg" alt="clock icon"></div>
+                </div>
+                <div class="item"><div class="first-word">
+                  Total Absent
+                </div>
+                <div class="second-word">
+                  <div id = "total_absent"></div> <p>hours</p>
+                </div>
+                <div class="card-icon"><img src="imgs\clock1.svg" alt="clock icon"></div>
+              </div>
+                <div class="item"><div class="first-word">
+                  Avg Absenteeism Per Day
+                </div>
+                <div class="second-word">
+                  <div id = "avg_absent_p"></div> <p>people</p>
+                </div>
+                <div class="card-icon"><img src="imgs\woman.svg" alt="clock icon"></div>
+              </div>
+                <div class="item"><div class="first-word">
+                    Avg Absenteeism Per Day
+                </div>
+                <div class="second-word">
+                  <div id = "avg_absent"></div> <p>hours</p>
+                </div>
+                <div class="card-icon"><img src="imgs\clock1.svg" alt="clock icon"></div>
+                </div>
+              </div>
+
+              <div class="mid_container">
+                <div class="mid_two"><div id="big-graph"></div></div>
+              </div>
+
+              <div class="mid_container">
+                <div class="mid_three_left"> <div class="pietitle1">Absent Percentage</div><div class="pietitle2"><div id = "absent_rate2"></div></div><div
+                  data-progress="90"
+                  data-track-width="15" 
+                  data-track-colour="555555" 
+                  data-fill-colour="228B22" 
+                  data-text-colour="383838" 
+                  data-stroke-colour="FFFFFF" 
+                  data-stroke-spacing="1"
+                  class="progress"> 
+                </div></div>
+                <div class="mid_three_center">
+                  <div class="table-title1">Most Absent Days</div>
+                  <div id="table1"></div>
+                    
+                </div>
+                <div class="mid_three_right"><div id="heat">
+                </div></div>
+              </div>
+        </div>
+        <div class="column3">
+            <div class="right_container">
+                <div class="right_one">
+                    <div id="my_dataviz">
+                    </div>
+                </div>
+              </div>
+
+              <div class="right_container">
+                <div class="right_two">
+                  <div id="my_dataviz2">
+                  </div>
+                </div>
+              </div>
+
+              <div class="right_container">
+                <div class="right_three"> 
+                  <div id="my_dataviz3">
+                  </div>
+                  
+              </div>
+              </div>
+        </div>
+      </div>
+
+      
+
+      <script type="text/javascript" src="Directors Office.js"></script>
+
+      <script>
+        window.onload = function(){
+
+
+          d3.csv("stats_Directors Office.csv",d3.autoType).then( function(data33) {
+
+
+            document.getElementById('total_absent_p').innerHTML = data33[0].total_absent_p;
+
+            document.getElementById('total_absent').innerHTML = data33[0].total_absent;
+
+            document.getElementById('avg_absent_p').innerHTML = data33[0].avg_absent_p;
+
+            document.getElementById('avg_absent').innerHTML = data33[0].avg_absent;
+        
+            document.getElementById('absent_rate2').innerHTML = data33[0].absent_rate;
+
+          })
+        };
+        </script>
+    
+
+   
+    
+</body>
+
+</html>
