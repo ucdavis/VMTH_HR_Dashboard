@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Medicine/Community Practice</title>
+    <title>Labs</title>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
         <div class="column2">
           <nav role="navigation">
             <ul>
-              <li> <div class="big-text">Medicine/Community Practice <i class="fas fa-angle-down"></i><br> <span>June 2021 Mon-Fri</span></div>
+              <li> <div class="big-text">Labs <i class="fas fa-angle-down"></i><br> <span>June 2021 Mon-Fri</span></div>
               <ul class="dropdown">
                         <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Anesthesia staffing.html"> <li class='links2'>Anesthesia</li></a>
                         <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Central Service staffing.html"><li class='links2'>Central Service</li></a>
@@ -140,8 +140,8 @@
                 <ul>
                   <li> <div class="big-text">Staffing Stats <i class="fas fa-angle-down"></i><br> <span>June 2021 Mon-Fri</span></div>
                   <ul class="dropdown">
-                            <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Medicine Community Practice.html"> <li class='links2'>Absent Stats</li></a>
-                            <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Medicine Community Practice staffing.html"><li class='links2'>Staffing Stats</li></a>
+                            <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Labs.html"> <li class='links2'>Absent Stats</li></a>
+                            <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Labs staffing.html"><li class='links2'>Staffing Stats</li></a>
                            
                         </ul>
                       </li>
@@ -173,13 +173,13 @@
 
       
 
-      <script type="text/javascript" src="Medicine Community Practice staffing.js"></script>
+      <script type="text/javascript" src="Labs staffing.js"></script>
 
       <script>
         window.onload = function(){
 
 
-          d3.csv("stats2_MedicineCommunity Practice.csv",d3.autoType).then( function(data33) {
+          d3.csv("stats2_Labs.csv",d3.autoType).then( function(data33) {
 
 
             document.getElementById('total_absent_p').innerHTML = data33[0].full_staffed;

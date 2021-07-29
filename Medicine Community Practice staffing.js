@@ -24,7 +24,7 @@ var svg = d3.select("#my_dataviz").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.csv("ab_per_day_Medicine Community Practice.csv").then(function(data) {
+d3.csv("ab_per_day_MedicineCommunity Practice.csv").then(function(data) {
 
 // format the data
 data.forEach(function(d) {
@@ -125,7 +125,7 @@ async function drawBarChart3() {
  
 
 // get the data
-d3.csv("ab_by_week_Medicine Community Practice.csv").then(function(data) {
+d3.csv("ab_by_week_MedicineCommunity Practice.csv").then(function(data) {
 
     var margin = {top: 70, right: 0, bottom: 10, left: 10},
     width = 300 - margin.left - margin.right,
@@ -271,7 +271,7 @@ var svg = d3.select("#my_dataviz3").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.csv("ab_by_type_Medicine Community Practice.csv").then(function(data) {
+d3.csv("ab_by_type_MedicineCommunity Practice.csv").then(function(data) {
 
 // format the data
 data.forEach(function(d) {
@@ -385,7 +385,7 @@ var svg = d3.select("#heat")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("heat_csv_Medicine Community Practice.csv").then(function(data){
+d3.csv("heat_csv_MedicineCommunity Practice.csv").then(function(data){
 
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   var myGroups = d3.map(data, function(d){return d.Day;})
@@ -515,7 +515,7 @@ drawheat()
 
 
 
-d3.text("c5Medicine Community Practice.csv").then(function(datasetText) {
+d3.text("c5MedicineCommunity Practice.csv").then(function(datasetText) {
   var rows  = d3.csvParseRows(datasetText),
       table = d3.select('#table1').append('table')
                
@@ -576,9 +576,9 @@ const svg = d3.select("#big-graph")
     .attr("transform",`translate(${margin.left},${margin.top})`);
 
 // Parse the Data
-d3.csv("big_graph_Medicine Community Practice.csv").then( function(data) {
+d3.csv("big_graph_MedicineCommunity Practice.csv").then( function(data) {
 
-  d3.csv("big_graph_Medicine Community Practice2.csv",d3.autoType).then( function(data2) {
+  d3.csv("big_graph_MedicineCommunity Practice2.csv",d3.autoType).then( function(data2) {
 
 
   
@@ -902,7 +902,7 @@ var renderProgress = function(el) {
     stroke: '#855CF8',
   }
 
-  d3.csv("stats2_Medicine Community Practice.csv",d3.autoType).then( function(data33) {
+  d3.csv("stats2_MedicineCommunity Practice.csv",d3.autoType).then( function(data33) {
   
   var radius = 100;
   var border = 40;
