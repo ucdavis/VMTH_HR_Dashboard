@@ -80,7 +80,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -20)
         .attr("text-anchor", "left")
-        .text("June 2021");
+        .text("July 2021");
 
   
 
@@ -206,7 +206,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -20)
         .attr("text-anchor", "left")
-        .text("June 2021");
+        .text("July 2021");
 
   
 
@@ -327,7 +327,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -20)
         .attr("text-anchor", "left")
-        .text("June 2021");
+        .text("July 2021");
 
   
 
@@ -656,7 +656,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -40)
         .attr("text-anchor", "left")
-        .text("June 2021");
+        .text("July 2021");
 
 
 
