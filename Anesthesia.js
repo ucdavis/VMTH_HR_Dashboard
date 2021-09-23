@@ -62,7 +62,7 @@ svg.selectAll(".bar")
   .enter().append("text")
     .attr("class", "text-bar")
     .attr("text-anchor", "left")
-    .attr("fill", "white")
+    .attr("fill", "black")
     .attr("x", 5)
     .attr("y", function(d) { return y(d.Day) + 18; })
     .text(function(d) { return d.Day; });
@@ -80,7 +80,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -20)
         .attr("text-anchor", "left")
-        .text("July 2021");
+        .text("August 2021");
 
   
 
@@ -188,9 +188,9 @@ svg.selectAll(".bar")
   .enter().append("text")
     .attr("class", "text-bar")
     .attr("text-anchor", "left")
-    .attr("fill", "white")
+    .attr("fill", "black")
     .attr("x", 5)
-    .attr("y", function(d) { return y(d.Day) + 18; })
+    .attr("y", function(d) { return y(d.Day) + 26; })
     .text(function(d) { return d.Day; });
 
     svg.append("text")
@@ -206,7 +206,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -20)
         .attr("text-anchor", "left")
-        .text("July 2021");
+        .text("August 2021");
 
   
 
@@ -299,7 +299,7 @@ svg.selectAll(".bar")
     .attr("class", "text-bar2")
     .attr("text-anchor", "middle")
     .attr("x", function(d) { return x(d.Absences + 7); })
-    .attr("y", function(d) { return y(d.Day) + y.bandwidth()/2; })
+    .attr("y", function(d) { return y(d.Day) + y.bandwidth()/2 +3 ; })
     .text(function(d) { return d.Absences + "%"; });
 
     var formatText = d3.format('.0%');
@@ -309,9 +309,9 @@ svg.selectAll(".bar")
   .enter().append("text")
     .attr("class", "text-bar")
     .attr("text-anchor", "left")
-    .attr("fill", "white")
+    .attr("fill", "black")
     .attr("x", 5)
-    .attr("y", function(d) { return y(d.Day) + y.bandwidth()/2; })
+    .attr("y", function(d) { return y(d.Day) + y.bandwidth()/2 +10; })
     .text(function(d) { return d.Day; });
 
     svg.append("text")
@@ -327,7 +327,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -20)
         .attr("text-anchor", "left")
-        .text("July 2021");
+        .text("August 2021");
 
   
 
@@ -656,7 +656,7 @@ svg.append("text")
         .attr("x", 0)
         .attr("y", -40)
         .attr("text-anchor", "left")
-        .text("July 2021");
+        .text("August 2021");
 
 
 

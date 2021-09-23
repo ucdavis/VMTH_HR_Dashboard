@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="newapp3.css">
+    <link rel="stylesheet" type="text/css" href="newapp3_home.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
@@ -52,7 +52,7 @@
         <div class="column2">
           <nav role="navigation">
             <ul>
-              <li> <div class="big-text">Anesthesia<i class="fas fa-angle-down"></i><br> <span>July 2021 Mon-Fri 24 hours</span></div>
+              <li> <div class="big-text">Home<i class="fas fa-angle-down"></i><br> <span>August 2021 Mon-Fri 24 hours</span></div>
                 <ul class="dropdown">
                   <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Administration_Overhead.html"> <li class='links2'>Administration Overhead</li></a>
                   <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Anesthesia.html"> <li class='links2'>Anesthesia</li></a>
@@ -93,95 +93,22 @@
             </li>
           </ul>
         </nav>
-            <div class="mid_container">
-                <div class="item">
-                  <div class="first-word">
-                    Total Absent
-                  </div>
-                  <div class="second-word">
-                    <div id = "total_absent_p"></div> <p>people</p>
-                  </div>
-                  <div class="card-icon"><img src="imgs\man.svg" alt="clock icon"></div>
-                </div>
-                <div class="item"><div class="first-word">
-                  Total Absent
-                </div>
-                <div class="second-word">
-                  <div id = "total_absent"></div> <p>hours</p>
-                </div>
-                <div class="card-icon"><img src="imgs\clock1.svg" alt="clock icon"></div>
-              </div>
-                <div class="item"><div class="first-word">
-                  Avg Absenteeism Per Day
-                </div>
-                <div class="second-word">
-                  <div id = "avg_absent_p"></div> <p>people</p>
-                </div>
-                <div class="card-icon"><img src="imgs\woman.svg" alt="clock icon"></div>
-              </div>
-                <div class="item"><div class="first-word">
-                    Avg Absenteeism Per Day
-                </div>
-                <div class="second-word">
-                  <div id = "avg_absent"></div> <p>hours</p>
-                </div>
-                <div class="card-icon"><img src="imgs\clock1.svg" alt="clock icon"></div>
-                </div>
-              </div>
+            
 
-              <div class="mid_container">
-                <div class="mid_two"><div id="big-graph"></div></div>
-              </div>
+        <div class="mid_three_center">
+          
+          <div id="table1"></div>
+            
+        </div> 
 
-              <div class="mid_container">
-                <div class="mid_three_left"> <div class="pietitle1">Absent Percentage</div><div class="pietitle2"><div id = "absent_rate2"></div></div><div
-                  data-progress="90"
-                  data-track-width="15" 
-                  data-track-colour="555555" 
-                  data-fill-colour="228B22" 
-                  data-text-colour="383838" 
-                  data-stroke-colour="FFFFFF" 
-                  data-stroke-spacing="1"
-                  class="progress"> 
-                </div></div>
-                <div class="mid_three_center">
-                  <div class="table-title1">Most Absent Days</div>
-                  <div id="table1"></div>
-                    
-                </div>
-                <div class="mid_three_right"><div id="heat">
-                </div></div>
-              </div>
+              
         </div>
-        <div class="column3">
-         
-            <div class="right_container">
-                <div class="right_one">
-                    <div id="my_dataviz">
-                    </div>
-                </div>
-              </div>
-
-              <div class="right_container">
-                <div class="right_two">
-                  <div id="my_dataviz2">
-                  </div>
-                </div>
-              </div>
-
-              <div class="right_container">
-                <div class="right_three"> 
-                  <div id="my_dataviz3">
-                  </div>
-                  
-              </div>
-              </div>
-        </div>
+        
       </div>
 
       
 
-      <script type="text/javascript" src="Anesthesia.js"></script>
+      <script type="text/javascript" src="home.js"></script>
 
       <script>
         window.onload = function(){
