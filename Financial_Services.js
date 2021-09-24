@@ -24,7 +24,7 @@ var svg = d3.select("#my_dataviz").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.csv("ab_per_day_FINANCIAL SERVICES.csv").then(function(data) {
+d3.csv("ab_per_day_Financial Services.csv").then(function(data) {
 
 // format the data
 data.forEach(function(d) {
@@ -385,7 +385,7 @@ var svg = d3.select("#heat")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("heat_csv_FINANCIAL SERVICES.csv").then(function(data){
+d3.csv("heat_csv_Financial Services.csv").then(function(data){
 
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   var myGroups = d3.map(data, function(d){return d.Day;})
