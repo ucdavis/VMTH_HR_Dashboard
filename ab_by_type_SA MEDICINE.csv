@@ -1,3 +1,5 @@
 "","Day","Absences"
-"1","SICK",50
-"2","VACATION",50
+"1","VACATION",45
+"2","SICK",35
+"3","FMLA",10
+"4","LEAVE",10
