@@ -72,7 +72,7 @@ var line = svg.selectAll("mybar")
       .enter().append("text")
       .attr("class", "barText")
       .attr("x", function(d) { return x(d.year )+10; })
-      .attr("y", function(d) { return y(d.n)-5; })
+      .attr("y", function(d) { return y(d.n); })
       .text(function(d) { return d.n2; })
       ;
     

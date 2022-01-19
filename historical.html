@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Home</title>
+    <title>Historical Table</title>
 </head>
 
 <body>
@@ -36,6 +36,7 @@
             <a href= "https://ucdavis.github.io/VMTH_HR_Dashboard/faq.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\faq.svg" alt="clock icon"></div>FAQ</div></a>
             <a href= "https://ucdavis.github.io/VMTH_HR_Dashboard/contact.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\mail.svg" alt="clock icon"></div>Contact</div></a>
             <a href= "https://ucdavis.github.io/VMTH_HR_Dashboard/settings.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\settings.svg" alt="clock icon"></div>Settings</div></a>
+            <a href= "https://ucdavis.github.io/VMTH_HR_Dashboard/historical.html"><div class="info-text3"><div class="nav-icon"><img src="imgs\settings.svg" alt="clock icon"></div>Historical</div></a>
               
               </div>
     
@@ -52,7 +53,7 @@
         <div class="column2">
           <nav role="navigation">
             <ul>
-              <li> <div class="big-text">Home<i class="fas fa-angle-down"></i><br> <span>November 2021 Mon-Fri 24 hours</span></div>
+              <li> <div class="big-text">Home<i class="fas fa-angle-down"></i><br> <span>December 2021 Mon-Fri 24 hours</span></div>
                 <ul class="dropdown">
                   <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Administration_Overhead.html"> <li class='links2'>Administration Overhead</li></a>
                   <a href="https://ucdavis.github.io/VMTH_HR_Dashboard/Anesthesia.html"> <li class='links2'>Anesthesia</li></a>
@@ -97,8 +98,13 @@
             
 
         <div class="mid_three_center">
-          
-          <div id="table1"></div>
+            <!-- Initialize a select button -->
+
+        
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"><div class="historical_title">Monthly Absent Rate</div><select id="selectButton"></select></div>
+
+         
             
         </div> 
 
@@ -132,7 +138,7 @@
         };
         </script>
     
-
+    
    
     
 </body>
