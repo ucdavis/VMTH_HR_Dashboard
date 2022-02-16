@@ -24,7 +24,7 @@ var svg = d3.select("#my_dataviz").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.csv("ab_per_day_Client Services.csv").then(function(data) {
+d3.csv("ab_per_day_CLIENT SERVICES.csv").then(function(data) {
 
 // format the data
 data.forEach(function(d) {
@@ -125,7 +125,7 @@ async function drawBarChart3() {
  
 
 // get the data
-d3.csv("ab_by_week_Client Services.csv").then(function(data) {
+d3.csv("ab_by_week_CLIENT SERVICES.csv").then(function(data) {
 
     var margin = {top: 70, right: 0, bottom: 10, left: 10},
     width = 300 - margin.left - margin.right,
@@ -271,7 +271,7 @@ var svg = d3.select("#my_dataviz3").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.csv("ab_by_type_Client Services.csv").then(function(data) {
+d3.csv("ab_by_type_CLIENT SERVICES.csv").then(function(data) {
 
 // format the data
 data.forEach(function(d) {
@@ -385,7 +385,7 @@ var svg = d3.select("#heat")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("heat_csv_Client Services.csv").then(function(data){
+d3.csv("heat_csv_CLIENT SERVICES.csv").then(function(data){
 
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   var myGroups = d3.map(data, function(d){return d.Day;})
@@ -515,7 +515,7 @@ drawheat()
 
 
 
-d3.text("table1_Client Services.csv").then(function(datasetText) {
+d3.text("table1_CLIENT SERVICES.csv").then(function(datasetText) {
   var rows  = d3.csvParseRows(datasetText),
       table = d3.select('#table1').append('table')
                
@@ -576,9 +576,9 @@ const svg = d3.select("#big-graph")
     .attr("transform",`translate(${margin.left},${margin.top})`);
 
 // Parse the Data
-d3.csv("big_graph_Client Services.csv").then( function(data) {
+d3.csv("big_graph_CLIENT SERVICES.csv").then( function(data) {
 
-  d3.csv("big_graph_Client Services2.csv",d3.autoType).then( function(data2) {
+  d3.csv("big_graph_CLIENT SERVICES2.csv",d3.autoType).then( function(data2) {
 
 
   
@@ -902,7 +902,7 @@ var renderProgress = function(el) {
     stroke: '#855CF8',
   }
 
-  d3.csv("stats_Client Services.csv",d3.autoType).then( function(data33) {
+  d3.csv("stats_CLIENT SERVICES.csv",d3.autoType).then( function(data33) {
   
   var radius = 100;
   var border = 40;
