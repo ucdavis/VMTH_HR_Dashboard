@@ -111,13 +111,13 @@
 
       
 
-      <script type="text/javascript" src="home.js"></script>
+      <script type="text/javascript" src="VMTH.js"></script>
 
       <script>
         window.onload = function(){
 
 
-          d3.csv("stats_Anesthesia.csv",d3.autoType).then( function(data33) {
+          d3.csv("stats_VMTH.csv",d3.autoType).then( function(data33) {
 
 
             document.getElementById('total_absent_p').innerHTML = data33[0].total_absent_p;
