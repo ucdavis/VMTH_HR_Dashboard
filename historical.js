@@ -58,7 +58,7 @@ svg.append("g")
 
 // Bars
 var line = svg.selectAll("mybar")
-.data(data.filter(function(d){return d.name=="NEURO"}))
+.data(data.filter(function(d){return d.name=="VMTH"}))
   .join("rect")
     .attr("x", d => x(d.year))
     .attr("y", d => y(d.n))
@@ -68,7 +68,7 @@ var line = svg.selectAll("mybar")
     .attr("class","bar22")
 
     var text = svg.selectAll(".barText")
-    .data(data.filter(function(d){return d.name=="NEURO"}))                             
+    .data(data.filter(function(d){return d.name=="VMTH"}))                             
       .enter().append("text")
       .attr("class", "barText")
       .attr("x", function(d) { return x(d.year )+10; })
