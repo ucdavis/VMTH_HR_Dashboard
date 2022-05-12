@@ -2,8 +2,8 @@
 "1","Monday","EMERGENCY",0
 "2","Monday","FMLA",0
 "3","Monday","LEAVE",0
-"4","Monday","SICK",1
-"5","Monday","VACATION",0
+"4","Monday","SICK",0
+"5","Monday","VACATION",1
 "6","Tuesday","EMERGENCY",0
 "7","Tuesday","FMLA",0
 "8","Tuesday","LEAVE",0
@@ -23,4 +23,4 @@
 "22","Friday","FMLA",0
 "23","Friday","LEAVE",0
 "24","Friday","SICK",0
-"25","Friday","VACATION",0
+"25","Friday","VACATION",1
