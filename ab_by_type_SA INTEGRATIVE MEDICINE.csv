@@ -1,2 +1,4 @@
 "","Day","Absences"
-"1","SICK",100
+"1","LEAVE",60
+"2","EMERGENCY",33
+"3","SICK",7
