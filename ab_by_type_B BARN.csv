@@ -1,4 +1,5 @@
 "","Day","Absences"
-"1","LEAVE",33
-"2","SICK",33
-"3","VACATION",33
+"1","EMERGENCY",36
+"2","LEAVE",27
+"3","VACATION",27
+"4","SICK",9
